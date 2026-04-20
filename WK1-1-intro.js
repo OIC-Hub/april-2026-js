@@ -1,1 +1,2 @@
 document.getElementById('p3').innerHTML = "<b>I am the new guy from external js</b>";
+document.write("Welcome here");
