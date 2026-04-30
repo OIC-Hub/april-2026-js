@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myElement" onmouseover="moveOverMe(this)" onmouseout="moveOut()">Hello Darling.</p>
+
+    <!-- onkeypress also works like onkeydown -->
+    <input type="text" onkeydown="pressKeydown(this)">
+
+    <!-- oninput also works like onkeyup -->
+    <input type="text" onkeyup="pressKeyup(this)">
+
+    <input type="text" id="myinput">
+
+    <form action="" style="margin-top: 20px;" id="myform">
+        <input type="text" id="text1">
+        <input type="submit">
+        <p id="result"></p>
+    </form>
+
+    <a href="https://google.cm" id="google">Google</a>
+
+    <form action="" id="ageForm">
+        <h3>Voter's Eligibility</h3>
+        <h4>Enter your year of birth below</h4>
+        <input type="number" id="yearofbirth" placeholder="Year of birth"><br>
+        <input type="submit">
+        <p id="displayResult"></p>
+    </form>
+
+    <script src="WK2-4-events-conditional-statement.js"></script>
+</body>
+</html>
