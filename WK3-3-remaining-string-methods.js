@@ -50,7 +50,28 @@ let num3 = "2";
 let repeat2 = num3.repeat(4);
 console.log(repeat2);
 
+let myform = document.querySelector('#myform');
+myform.addEventListener('submit', function(e){
+    e.preventDefault();
 
+    let userInput = document.querySelector('#input').value.trim();
+    let message = "";
+
+    if(userInput === ""){
+        message = "Enter your account number";
+    } else if(userInput.length != 10){
+        message = "Enter your account number in length of 10";
+    } else {
+        let slice1 = userInput.slice(0, 3)
+        let slice2 = userInput.slice(3, 6);
+        let slice3 = userInput.slice(6);
+
+        message = `${slice1}xxx${slice3}`
+    }
+
+    document.querySelector('#result').innerHTML = message;
+
+})
 
 
 
