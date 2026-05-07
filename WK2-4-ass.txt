@@ -4,6 +4,7 @@ Pick your assignment based on your name:
 3. ATM Withdrawal Simulator - Loveth
 4. Traffic Light System - Babatunde
 5. Simple Login Authentication - Ifeoluwa
+6. Student Grade Evaluator - Ola
 
 Create a README.md file and explain what your project is about.
 
