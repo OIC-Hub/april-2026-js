@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+        #employees{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .eachEmployee{
+            width: 18%;
+            text-align: center;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            margin-bottom: 50px;
+            padding: 20px;
+        }
+
+        .eachEmployee img{
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            border-radius: 50%;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <section id="employees"></section>
+    <hr>
+
+    <input id="search" type="text" onkeyup="filterEmployee()" class="border m-3 p-3">
+        
+    <section id="employees2" class="grid grid-cols-5 gap-5 mt-5"></section>
+    <div id="notFound" class="hidden">
+        <h4>Item not found</h4>
+    </div>
+    <script src="WK4-4-advanced-array-methods.js"></script>
+</body>
+</html>

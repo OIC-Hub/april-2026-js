@@ -1,0 +1,11 @@
+Design a product page of a website and style it in a good way. You can look for template online
+
+You should have an array of objects to contain your products with each object having the properties you need
+on your product like name, price, image, etc.
+
+You are to loop through that array and display them accordingly in your page with a stunning style using CSS or Tailwind
+
+- Share the link to the vercel / github page and also the link to your github repository for review
+- Kindly turn your work in by sending to my WhatsApp on or before Sunday, May 17th, 2025 by 08:59pm. Late submission is strictly discouraged.
+
+You are encouraged to reach out if you have any challenge during the development of this project.
