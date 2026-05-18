@@ -206,21 +206,7 @@ employees.forEach(function(value, index){
     `;
 });
 
-let employeeMap = employees.map(function(value){
-    return `
-        <div class="shadow text-center p-4 mb-10">
-            <img src="${value.avatar}">
-            <p>${value.name}</p>
-            <p>Role: ${value.role}</p>
-            <p>Department: ${value.department}</p>
-        </div>
-    `
-});
-
-console.log(employeeMap);
-
-document.getElementById('employees2').innerHTML = employeeMap.join("");
-
+displayEmployees(employees);
 
 function filterEmployee() {
     let search = document.querySelector('#search').value;
@@ -234,18 +220,22 @@ function filterEmployee() {
         document.querySelector('#notFound').classList.remove('hidden');
     } else {
         document.querySelector('#notFound').classList.add('hidden');
-        let filterMap = peopleFilter.map(function(value){
-            return `
-                <div class="shadow text-center p-4 mb-10">
-                    <img src="${value.avatar}">
-                    <p>${value.name}</p>
-                    <p>Role: ${value.role}</p>
-                    <p>Department: ${value.department}</p>
-                </div>
-            `
-        });
-
-        document.getElementById('employees2').innerHTML = filterMap.join("");
+        displayEmployees(peopleFilter);
     }
 
+}
+
+function displayEmployees(employees){
+  let employeeArray = employees.map(function(value){
+      return `
+          <div class="shadow text-center p-4 mb-10">
+              <img src="${value.avatar}">
+              <p>${value.name}</p>
+              <p>Role: ${value.role}</p>
+              <p>Department: ${value.department}</p>
+          </div>
+      `
+  });
+
+  document.getElementById('employees2').innerHTML = employeeArray.join("");
 }
