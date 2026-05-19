@@ -215,6 +215,8 @@ function filterEmployee() {
         return value.name.toLowerCase().includes(search.toLowerCase());
     });
 
+    // let peopleFilter = employees.filter(value => value.name.toLowerCase().includes(search.toLowerCase()));
+
     if(peopleFilter.length === 0){
         document.getElementById('employees2').innerHTML = "";
         document.querySelector('#notFound').classList.remove('hidden');
