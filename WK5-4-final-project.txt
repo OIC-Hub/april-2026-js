@@ -1,0 +1,18 @@
+Design a stunning, aesthetic and responsive e-commerce website with API integration included.
+You are to use API integration, Web Storage and all other functionalities that you desire.
+
+Create a README.md file and explain what your project is all about.
+
+THIS IS NOT A COLLABORATIVE PROJECT.
+
+Push the code to your github and host on vercel and ensure you have your start file on index.html.
+
+DO NOT SUBMIT AI GENERATED CODE!!!
+
+You are to develop this assignment and come for your final presentation on Thursday, June 4th, 2026 by 2pm.
+
+This project is a strong requirement for you to proceed to the next stage.
+Additionally, if you do not turn in at least 80% of your assignments since the start of your HTML,
+you are liable to repeat the JS class and pay the designated fee for repeating the course.
+
+You are encouraged to reach out if you have any challenge during the development of this project.
